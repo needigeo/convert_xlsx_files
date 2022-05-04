@@ -16,8 +16,8 @@ type fileStruct struct {
 }
 
 func main() {
-	inputDir := flag.String("inputDir", "null", "Путь к каталогу с исходными файламии, должен заканчиваться слешем")
-	outputDir := flag.String("outputDir", "null", "Путь к каталогу в который будут сохранены файлы после обработки")
+	inputDir := flag.String("inputDir", "null", "Путь к каталогу с исходными файламии. ВАЖНО должен заканчиваться слешем.")
+	outputDir := flag.String("outputDir", "null", "Путь к каталогу в который будут сохранены файлы после обработки. ВАЖНО Должен заканчиваться слешем.")
 	flag.Parse()
 
 	fileslice := make([]fileStruct, 1)
